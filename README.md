@@ -9,7 +9,7 @@ Bank App is a web application that simulates a real-world banking environment, a
 
 ## Features
 
-- **User Authentication**: Secure registration and login functionalities to manage your accounts.
+- **User Authentication**: Registration and login.
 - **Different Currency Accounts**: Create and manage accounts in various currencies.
 - **Money Transfers**: Transfer money between accounts with automatic currency conversion.
 - **Investment Accounts**: Create and manage an investment account for cryptocurrency purchases.
