@@ -27,3 +27,8 @@ Bank App is a web application that simulates a real-world banking environment, a
 
    ```bash
    git clone https://github.com/romenab/Bank.git
+
+2. **Run**
+
+   ```bash
+   composer install
