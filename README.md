@@ -9,7 +9,7 @@ This project is a Codelex Final Project developed using PHP and the Laravel fram
 - **Different Currency Accounts**: Create and manage accounts in various currencies.
 - **Money Transfers**: Transfer money between accounts with automatic currency conversion.
 - **Investment Accounts**: Create and manage an investment account for cryptocurrency purchases.
-- **Cryptocurrency**: View and purchase from the top 100 cryptocurrencies using investment account money.
+- **Cryptocurrency**: View, purchase and sell from the top 100 cryptocurrencies using investment account money.
 
 ## Overview
 
