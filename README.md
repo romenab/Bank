@@ -8,6 +8,7 @@ This project is a Codelex Final Project developed using PHP and the Laravel fram
 - **User Authentication**: Registration and login.
 - **Different Currency Accounts**: Create and manage accounts in various currencies.
 - **Money Transfers**: Transfer money between accounts with automatic currency conversion.
+- **Transaction history**: View money transactions between accounts.
 - **Investment Accounts**: Create and manage an investment account for cryptocurrency purchases.
 - **Cryptocurrency**: View, purchase and sell from the top 100 cryptocurrencies using investment account money.
 
@@ -31,6 +32,8 @@ Bank App is a web application that simulates a real-world banking environment, a
 ![moneyTransfer](https://github.com/user-attachments/assets/9715467e-5132-4c32-bc65-9b448e1763da)
 ## Transfer successful
 ![transferSuccessful](https://github.com/user-attachments/assets/f3e85ff3-f66f-437e-97a3-97f4d91b9ed1)
+## Transaction history
+![transactionhistory](https://github.com/user-attachments/assets/9b54ee77-403e-4372-8269-049518415558)
 ## Purchase Crypto
 ![buycrypto](https://github.com/user-attachments/assets/56b4b9c1-d03d-4b22-99b3-0823f4ec0cd4)
 ## Owned Crypto
