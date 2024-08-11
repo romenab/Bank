@@ -13,6 +13,7 @@ class TransferService
 {
     public function send(array $validated): void
     {
+        $userMoney = $validated['money'];
         $recipient = User::where('first_name', $validated['first_name'])
             ->where('last_name', $validated['last_name'])
             ->first();
@@ -61,6 +62,14 @@ class TransferService
         DB::table('accounts')
             ->where('user_uuid', $recipientAccount->user_uuid)
             ->update(['money' => $recipientAccount->money]);
+
+        DB::table('transactions')->insert([
+            'sender_uuid' => $userAccount->user_uuid,
+            'receiver_uuid' => $recipientAccount->user_uuid,
+            'sender_money' => $userMoney,
+            'receiver_money' => $validated['money'],
+            'created_at' => now(),
+        ]);
 
     }
 }

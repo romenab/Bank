@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Account;
+use App\Models\Transaction;
 use App\Services\TransferService;
 use Illuminate\Support\Facades\Auth;
 
@@ -12,7 +13,12 @@ class TransferController
     {
         $user = Auth::user();
         $account = Account::where('user_uuid', $user['user_uuid'])->first();
-        return view('account.money-transfer', ['account' => $account]);
+        $transactions = Transaction::where('sender_uuid', $user['user_uuid'])
+            ->orWhere('receiver_uuid', $user['user_uuid'])
+            ->with(['senderAccount', 'receiverAccount'])
+            ->orderBy('created_at', 'desc')
+            ->paginate(5);
+        return view('account.money-transfer', ['account' => $account, 'transactions' => $transactions]);
     }
 
     public function send()

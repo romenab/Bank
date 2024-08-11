@@ -22,7 +22,7 @@
 </head>
 
 <body class="h-full">
-<div class="min-h-full">
+<div class="min-h-full flex flex-col">
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
@@ -70,17 +70,18 @@
         </div>
     </header>
 
-    <main>
+    <main class="flex-grow">
         <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             {{ $slot }}
         </div>
     </main>
+    <footer class="bg-gray-800 text-white">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <p class="text-sm">&copy; {{ date('Y') }} Bank.</p>
+        </div>
+    </footer>
 </div>
-<footer class="bg-gray-800 text-white">
-    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <p class="text-sm">&copy; {{ date('Y') }} Bank.</p>
-    </div>
-</footer>
+
 </body>
 
 </html>
