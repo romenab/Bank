@@ -1,7 +1,11 @@
 # Bank App
 
 Welcome to the **Bank App**!
+<<<<<<< HEAD
 This project is a Codelex Final Project developed using PHP and the Laravel framework.
+=======
+This project is a Codelex Final Project developed using PHP and the Laravel framework. 
+>>>>>>> 2999db34cb26bdc8a14bb750379fd3332efbe362
 
 ## Features
 
