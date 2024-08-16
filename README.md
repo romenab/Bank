@@ -46,16 +46,27 @@ Bank App is a web application that simulates a real-world banking environment, a
 
 - **PHP** > 8.2
 - **Laravel** > 11.9
+- **Composer** > 2.7.6
 
 ## Installation
 
 
-1. **Clone the Repository**
+1. `git clone https://github.com/romenab/Bank.git`
+2. `composer install`
+3. `npm install`
+4. `npm run build`
+5. `cp .env.example .env`
+6. `php artisan key:generate`
+7. `php artisan migrate`
+8. `php artisan serv`
 
-   ```bash
-   git clone https://github.com/romenab/Bank.git
 
-2. **Run**
+## API keys
 
-   ```bash
-   composer install
+On .env file make sure to add API keys.
+
+MY_EXCHANGE_RATE_API=
+https://www.exchangerate-api.com/
+
+MY_CRYPTO_API=
+https://coinmarketcap.com/
